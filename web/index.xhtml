@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Restortec</title>
+    </h:head>   
+    <h:body>
+        <h:form>
+            <h1 id ="usuario" align="center">RESTORTEC</h1><hr/>
+            <div align="center">
+                <h:panelGrid columns="2" >
+                    <h:outputLabel >
+                        Introduce tu Usuario:
+                    </h:outputLabel>
+                    <h:inputText id="IT_usuario" />
+                </h:panelGrid>
+            </div>
+            <div id ="psswd" align="center">
+                <h:panelGrid columns="2" >
+                    <h:outputLabel >
+                        Introduce tu Contraseña:
+                    </h:outputLabel>
+                    <h:inputText id="IT_psswd" />
+                </h:panelGrid>
+            </div><br/>
+            <div id="botones" align="center">
+                <h:panelGroup>
+                    <h:commandButton value="Iniciar Sesion" action="#{clientes.correo}"/>                    
+                    <h:commandButton value="Cancelar" action="#{Calculadora.reset()}" />                    
+                </h:panelGroup>    
+                <hr/>                
+            </div>
+        </h:form>
+    </h:body>
+
+</html>
+
